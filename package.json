@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "cp resources/css/* public/css/ && mix --production && php artisan route:cache && php artisan view:cache",
         "mix": "mix"
     },
     "devDependencies": {
