@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "composer update && composer install --no-dev --prefer-dist && cp resources/css/* public/css/ && mix --production && php artisan route:cache && php artisan view:cache && npm install && npm run prod",
+        "build": "composer self-update && composer update && composer install --no-dev --prefer-dist && cp resources/css/* public/css/ && mix --production && php artisan route:cache && php artisan view:cache && npm install && npm run prod",
         "mix": "mix"
     },
     "devDependencies": {
